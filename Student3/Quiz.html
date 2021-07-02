@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>quiz</title>
+    <link rel="stylesheet" href="Quiz.css">
+</head>
+<body class="main">
+<header>
+    <div>
+        <img class="logo" src="dark-tourism.jpg">
+
+        <nav class="nav">
+
+            <a href="../Student3/home.html"> Home</a>
+            <a href="../Student%204/gallery.html"> Gallery</a>
+            <a href="../Student3/Quiz.html"> Quiz</a>
+            <a href="../Student1/product%20page%20web%20cw.html"> Store</a>
+            <a href="../Student1/comment.html"> Comments</a>
+            <a href="../Student%204/sitemap.html"> Site map</a>
+            <a href="../Student3/aboutus.html"> About Us</a>
+
+
+        </nav>
+    </div>
+
+
+</header>
+<div class="build-div">
+    <div id="q" class="quec">
+
+        <p class="question" id=question>Question 1</p><p></p>
+
+
+
+
+        <p class="questcss" id="quest"></p>
+
+
+        <label class="option1" id="button1"><input value="1" type="radio"  id="button1" class="a1" onclick="correction(this.value,this.id)" /><label id="a1"></label></label>
+
+        <label class="option1" id="button2"><input value="2"  type="radio"  id="button2" class="a2" onclick="correction(this.value,this.id)"/><label id="a2"></label></label>
+
+        <label class="option1" id="button3"><input value="3" type="radio"   id="button3" class="a3" onclick="correction(this.value,this.id)"/><label id="a3"></label></label>
+
+        <label class="option1" id="button4"><input value="4" type="radio"   id="button4" class="a4" onclick="correction(this.value,this.id)"/><label id="a4"></label></label>
+
+        <p id="clock" class="clock">Timer</p>
+
+
+        </div>
+
+    </div>
+
+
+</div>
+<div id = "total" class = "second" style="display:none;">
+
+
+
+
+    <p id = marks></p>
+
+    <p id="result"></p>
+
+    <div>
+        <input type="image" src = "restart.png" id="restart" onclick=location.reload()>
+        <p id="restartp">Restart</p>
+        <label id="colors"><label id="a3"></label></label>
+    </div>
+
+
+</div>
+
+
+
+        <script>
+            var count = 0;
+
+            var id;
+
+            var marks = 0;
+
+
+            var questions = ["What is the city of Sri Lanka called 'Little England'? ",   //Add questios to the array
+
+                "What is the famous mode for travel in Sri Lanka?",
+
+                "In which part of Sri Lanka is the Ramboda Falls located?",
+
+                "for what purpose is Ambalangoda famous in SriLanka?",
+
+                "Which of these is considered a sacred city in Sri Lanka?",
+
+                "How much is a train ticket from Colombo to Badulla??",
+
+                "How many kilometers Airport to Kandy",
+
+                "What is the city is famous for corals in Sri Lanka?",
+
+                "Who made Sigiriya, a famous place in Sri Lanka?",
+                "Where is the turtle conservation project in Sri Lanka?"];
+
+            var ans1 = ["Galle","Bus","Nuwara Eliya","Masks","Anuradhapura","55","50km","Trincomalee","King Dutugamunu","Nilaweli"];
+
+            var ans2 = ["Nuwara Eliya","Train","Badulla","wood","Ella","80","102.9km","Colombo","King Kashyapa","Trincomalee"];
+
+            var ans3 = ["Mirissa","bike","Kandy","Brick","Jaffna","100","85km","Hikkaduwa","King Parakramabahu","Kosgoda"];
+
+            var ans4 = ["Trincomalee","Van","Rathnapura","Cement","Madolsima","250","180km","Nilaweli","king Nishshankamalla","Mirissa"];
+
+            var answer = [2,2,1,1,1,4,2,3,2,3];
+
+
+
+
+            function correction(val,id){
+
+                if(answer[count-1]==val){
+
+                    marks+=2;                                          //if answer correct add 2 marks for each
+
+                    document.getElementById(id).style.backgroundColor = "green";   //set the label color
+
+                    setTimeout('load(marks)',1000);
+                    document.getElementById("total").innerHTML += "question "+count+" : Correct<br>";
+
+
+
+
+
+                }else{
+
+                    marks -= 1;                            //if answer incorrect reduce 1 marks for each
+
+                    document.getElementById(id).style.backgroundColor = "red"; //set the label color
+
+                    setTimeout('load(marks)', 1000);
+                    document.getElementById("total").innerHTML += "question "+count+" : InCorrect<br>";
+
+                }
+                if(marks <0)
+                {
+                    marks = 0;                           //when marks are minus its equals to 0
+                };
+                if(marks>=10){
+                    document.getElementById("colors").style.backgroundColor="green";          //change if marks >= 10 to green
+                }
+                if(marks<10){
+                    document.getElementById("colors").style.backgroundColor="red";             //change if marks < 10 to red
+                }
+                return;
+
+
+            }
+
+            //setting the count down timer
+
+            load(marks);
+
+            var time = 100;
+
+
+             id = setInterval(timer ,1000);
+
+
+            function timer() {
+                var spend
+                document.getElementById("clock").innerHTML =  time ;
+                time = time - 1;
+                if (time>=0)
+                {
+                    var spend = 100 - time;
+                }
+                else {
+                    total(marks);
+                }
+
+
+            }
+
+
+
+            function load(marks){
+
+                document.getElementById("button1").style.backgroundColor = "white";
+
+                document.getElementById("button2").style.backgroundColor = "white";
+
+                document.getElementById("button3").style.backgroundColor = "white";
+
+                document.getElementById("button4").style.backgroundColor = "white";
+
+                //change questions and answers
+
+                document.getElementById("quest").innerHTML = questions[count];
+
+                document.getElementById("a1").innerHTML = ans1[count];
+
+                document.getElementById("a2").innerHTML = ans2[count];
+
+                document.getElementById("a3").innerHTML = ans3[count];
+
+                document.getElementById("a4").innerHTML = ans4[count];
+
+
+
+
+
+
+                if(count<=9){           // Keeping the count
+                    count=count+1;
+
+                    document.getElementById("question").innerHTML = "Question "+count;     //changing the quection number
+
+                }
+
+                else{
+                    total(marks);   //display the result after the quiz
+
+                }
+
+            }
+
+            <!--  Display the the total marks after the completion of the quiz  -->
+
+            function total(marks ){
+                document.getElementById("total").style.display = "block";
+
+                document.getElementById("q").style.display = "none";            //hide the quiz
+
+                clearInterval(id);
+                var spend = 100 - time;
+
+                document.getElementById("marks").innerHTML = "You Took "+ spend + " seconds to finished the quiz. Your Score is "+ marks;
+
+
+
+
+
+            }
+        </script>
+
+<h4 class="pageeditor">Page Editor:<a href="pageeditor%20M.html">Manodya Mendis</a> </h4>
+
+<a href="#top"><button type="button" id="myBtn">Back to Top</button></a>
+
+
+</body>
+
+
+<footer>
+    <div class="logo">
+        <img class="logo" src="dark-tourism.jpg" width="30" height="10">
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="#"> Home</a></li>
+            <li><a href="#"> Gallery</a></li>
+            <li><a href="#"> Quiz</a></li>
+            <li><a href="#"> Store</a></li>
+            <li><a href="#"> Comments</a></li>
+            <li><a href="#"> Site map</a></li>
+            <li><a href="#"> Locations</a></li>
+            <li><a href="#"> About Us</a></li>
+        </ul>
+    </nav>
+</footer>
+
+</html>

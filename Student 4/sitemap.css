@@ -1,0 +1,54 @@
+.bg {
+    background-image: url("beach.jpg");
+    display: flex;
+    width: auto;
+    height: 1700px;
+    justify-content: center;
+    background-size: cover;
+}
+
+#mainRect {
+    fill: transparent;
+    stroke-width: 5px;
+    stroke: black;
+
+}
+
+#pathHighlight {
+    stroke: black;
+    stroke-width: 5;
+}
+
+#subRect {
+    fill: transparent;
+    stroke-width: 1;
+    stroke: black;
+}
+footer .logo{
+    height: 35px;
+    width: 135px;
+    float: left;
+    margin: 0 auto;
+
+}
+footer{
+    background: black;
+    border-top:#e8491d 3px solid ;
+    padding: 50px 0px;
+    float: left;
+    width: 100%
+}
+
+footer nav ul li{
+    display: inline-block;
+    margin-left: 20px;
+    list-style: none;
+}
+
+footer nav ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+

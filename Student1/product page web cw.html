@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<header>
+    <div>
+        <img class="logo" src="dark-tourism.jpg">
+        <nav class="nav">
+            <a href="../Student3/home.html"> Home</a>
+            <a href="../Student%204/gallery.html"> Gallery</a>
+            <a href="../Student3/Quiz.html"> Quiz</a>
+            <a href="../Student1/product%20page%20web%20cw.html"> Store</a>
+            <a href="../Student1/comment.html"> Comments</a>
+            <a href="../Student%204/sitemap.html"> Site map</a>
+            <a href="../Student3/aboutus.html"> About Us</a>
+        </nav>
+    </div>
+</header>
+<head>
+    <title>order</title>
+    <style>
+        footer .logo{
+        height: 35px;
+        width: 135px;
+        float: left;
+        margin: 0 auto;
+        
+    }
+    footer{
+        background: black;
+        border-top:#e8491d 3px solid ;
+        padding: 30px 0px;
+        float: left;
+        width: 100%
+    }
+    
+    footer nav ul li{
+        display: inline-block;
+        margin-left: 20px;
+        list-style: none;
+    }
+    
+    footer nav ul li a{
+        color: #fff;
+        text-decoration: none;
+    }
+        .logo{
+            height: 70px;
+            width: 270px;
+
+}
+
+        header{
+            background: black;
+            border-bottom:#e8491d 3px solid ;
+}
+
+        .nav{
+            float: right;
+            background-color: black;
+            overflow: hidden;
+
+}
+
+        .nav a {
+            float: left;
+            font-size: 20px;
+            color: azure;
+            text-decoration: none;
+            padding: 14px 16px;
+            text-align: center;
+
+
+}
+        .nav a:hover {
+            font-weight: bold;
+            text-decoration: none;
+}
+        body 
+        {
+            background-color: black;
+        }
+        .product{
+	        float: left;
+			margin: 10px 10px 0 0;
+			width: 234px;
+            height: 400px;
+            font-size: 24px;
+            text-align: center;
+			background-color: darkgray;
+            border-radius: 24px;
+	    }
+        #h{
+            float: left;
+            margin: 10px 10px 0 0;
+            width: 10px;
+            height: 600px;
+        }
+
+        #containweb{
+            margin-top: 40px;
+            margin-left: 400px;
+            width: 1000px;
+        }
+        #tally{
+            margin-top: 20px;
+        }
+        #tally{
+            position: absolute;
+            
+            border: 20px;
+            width: 300px;
+            height: 560px;
+            padding-left: 19px;
+            border-radius: 24px;
+            background-color: grey;
+            color: black;
+            text-align: left;
+            font-size: 24px;
+        }
+        #nameid{
+            width: 90px;
+            margin-top: 50px;
+        }        
+        #itemid{
+            width: 24px;
+        }
+        #buybutt{
+            margin-top: 10px;
+            
+        }
+        h1{
+        	color: white;
+        }
+    </style>
+</head>
+<body>
+<h1>Store page</h1>
+<div id="tally">
+    <p><b>Purchase</b></p>
+    <div class="buy" id="buy">
+        <img src="empimg.jpg" alt="productone" width="234" height="234">
+    </div>
+    <label for="name">user name </label> 
+    <input type="text"  id="nameid" name="name"><br>    
+    <label for="productname">Item:  </label> 
+    <span id="productname"> </span> <br>
+        <label for="price">Price </label> 
+    <span id="price"> </span> <br>
+    
+    <label for="items">Items </label> 
+    <input type="text" id="input" name="noofitems" value="1"  required > <br>    
+    <label for="total" >Total</label> 
+    <span id="result"></span> <br>
+    <label for="total" >Total Bill</label>
+    <span id="result2"></span>
+    <div id=butt>
+        <button type="submit" id="buybutton" onclick="buynow()">Buy </button>    
+        <button type="submit" id="finishbutt" onclick="finishnow()">Finish </button>
+    </div>
+</div>
+
+<div id="containweb">    
+    <div class="product" id="one">
+        <div id="oneimg">
+        <img src="oneimg.jpg" alt="productone" width="234" height="234">
+        </div>
+        <div class="description">
+            <p><b><span id="nameproductone">Elephant statue</span></b> </p>
+            <div class="price" id="productoneprice">2000
+            </div>
+        </div>
+    </div>    <div class="product" id="two">
+        <div id="twoimg">
+        <img src="twoimg.jpg" alt="producttwo" width="234" height="234">
+        </div>
+        <div class="description">
+            <p> <b><span id="nameproducttwo">Awalokitheshwara statue</span> </b> </p>
+            <div class="price" id="producttwoprice">5000
+            </div>
+        </div>
+    </div>          
+    <div class="product" id="three">
+        <div id="threeimg">
+        <img src="threeimg.jpg" alt="productthree" width="234" height="234">
+        </div>
+        <div class="description">
+            <p> <b><span id="nameproductthree">Jewel necklace</span> </b> </p>
+            <div class="price" id="productthreeprice" >23000
+            </div>
+        </div>
+    </div>    
+    <div class="product" id="four">
+        <div id="fourimg">
+        <img src="fourimg.jpg" alt="productfour" width="234" height="234">
+        </div>
+        <div class="description">
+            <p> <b><span id="nameproductfour">Yaka mask</span></b> </p>
+            <div class="price" id="productfourprice">15000
+            </div>
+        </div>
+    </div>
+    <div id="h">
+</div>    
+</div>
+
+<script>
+    var productName = [];
+    var productPrice = [];
+    document.getElementById("one").addEventListener("click",function(){
+        document.getElementById("buy").innerHTML=document.getElementById("oneimg").innerHTML;
+        document.getElementById("price").innerHTML=document.getElementById("productoneprice").innerHTML;
+        document.getElementById("result").innerHTML=document.getElementById("productoneprice").innerHTML;
+        document.getElementById("productname").innerHTML=document.getElementById("nameproductone").innerHTML;
+        
+    });    
+    document.getElementById("two").addEventListener("click",function(){
+        document.getElementById("buy").innerHTML=document.getElementById("twoimg").innerHTML;
+        document.getElementById("price").innerHTML=document.getElementById("producttwoprice").innerHTML;
+        document.getElementById("result").innerHTML=document.getElementById("producttwoprice").innerHTML;
+        document.getElementById("productname").innerHTML=document.getElementById("nameproducttwo").innerHTML;
+    });
+    document.getElementById("three").addEventListener("click",function(){
+        document.getElementById("buy").innerHTML=document.getElementById("threeimg").innerHTML;
+        document.getElementById("price").innerHTML=document.getElementById("productthreeprice").innerHTML;
+        document.getElementById("result").innerHTML=document.getElementById("productthreeprice").innerHTML;
+        document.getElementById("productname").innerHTML=document.getElementById("nameproductthree").innerHTML;
+    });    
+    document.getElementById("four").addEventListener("click",function(){
+        document.getElementById("buy").innerHTML=document.getElementById("fourimg").innerHTML;
+        document.getElementById("price").innerHTML=document.getElementById("productfourprice").innerHTML;
+        document.getElementById("result").innerHTML=document.getElementById("productfourprice").innerHTML;
+        document.getElementById("productname").innerHTML=document.getElementById("nameproductfour").innerHTML;
+    });
+
+input.oninput = function() {
+    var Tot=input.value;
+    var priceitem;
+    priceitem= document.getElementById("price").innerHTML;
+    total= Tot*priceitem;
+    result.innerHTML=total;
+    
+    var fultot = productPrice.reduce(function(a, b){
+        return a + b;
+    }, 0);
+    console.log(fultot);
+    fultot+=total;
+    
+    result2.innerHTML=fultot;
+    
+}
+
+function buynow()
+    {
+        var username=  nameid.value;
+        priceitem= document.getElementById("price").innerHTML;
+        nameitem= document.getElementById("productname").innerHTML;
+        productName.push(nameitem);
+        productPrice.push(total);        
+        alert(username+" you got "+nameitem+" for "+ total+" rupees");
+    }
+function finishnow(){
+    var username=  nameid.value;
+    
+    for (var i = 0; i < productName.length; i++) 
+    {
+        alert("you got "+ productName[i]+" for "+productPrice[i]);        
+    };
+    var sum = productPrice.reduce(function(a, b){
+        return a + b;
+    }, 0);
+    console.log(sum);
+    
+    alert("thank you for shoping "+username+", the total tally is: "+ sum);
+    
+}    
+</script>
+</body>
+<footer>
+    <div class="logo">
+        <img class="logo" src="dark-tourism.jpg" width="30" height="10">
+    </div>
+    
+    <nav>
+        <ul>
+            <li><a href="#"> Home</a></li>
+            <li><a href="#"> Gallery</a></li>
+            <li><a href="#"> Quiz</a></li>
+            <li><a href="#"> Store</a></li>
+            <li><a href="#"> Comments</a></li>
+            <li><a href="#"> Site map</a></li>
+            <li><a href="#"> Locations</a></li>
+            <li><a href="#"> About Us</a></li>
+        </ul>
+    </nav>
+</footer>
+</html>

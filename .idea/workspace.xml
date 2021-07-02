@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3129f3ed-fc2e-4cb2-a28a-993ce0bee421" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1XyDNaKHzgRczPpC8XiFjuHKVlL" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.Quiz.html">
+    <configuration name="Quiz.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/untitled1/Quiz.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="aa.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/untitled1/aa.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="test.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/untitled1/test.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.Quiz.html" />
+        <item itemvalue="JavaScript Debug.aa.html" />
+        <item itemvalue="JavaScript Debug.test.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3129f3ed-fc2e-4cb2-a28a-993ce0bee421" name="Default Changelist" comment="" />
+      <created>1582009401530</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582009401530</updated>
+      <workItem from="1582009402946" duration="9890000" />
+      <workItem from="1582082606284" duration="1557000" />
+      <workItem from="1582089471085" duration="2290000" />
+      <workItem from="1582516155432" duration="737000" />
+      <workItem from="1582690153313" duration="5000" />
+      <workItem from="1584001498939" duration="4506000" />
+      <workItem from="1584150610053" duration="6283000" />
+      <workItem from="1584178729161" duration="8327000" />
+      <workItem from="1584243931382" duration="4474000" />
+      <workItem from="1584323911919" duration="4137000" />
+      <workItem from="1584533581114" duration="324000" />
+      <workItem from="1584534006251" duration="109000" />
+      <workItem from="1584627011075" duration="1237000" />
+      <workItem from="1584688504134" duration="7450000" />
+      <workItem from="1584720733643" duration="4232000" />
+      <workItem from="1584765313748" duration="44238000" />
+      <workItem from="1584824525428" duration="142000" />
+      <workItem from="1584850714183" duration="39663000" />
+      <workItem from="1584930500902" duration="46704000" />
+      <workItem from="1585014808603" duration="26454000" />
+      <workItem from="1585050664890" duration="3116000" />
+      <workItem from="1585065944133" duration="51000" />
+      <workItem from="1585559168219" duration="10912000" />
+      <workItem from="1585622692800" duration="6350000" />
+      <workItem from="1585915288909" duration="377000" />
+      <workItem from="1586231362531" duration="5734000" />
+      <workItem from="1587967799854" duration="10000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="533" y="215" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1582009427994">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="533" y="215" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1582009427994" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1584150633504">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1584150633504" />
+    <state x="592" y="119" width="760" height="803" key="dock-window-1" timestamp="1584862507421">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="592" y="119" width="760" height="803" key="dock-window-1/0.0.1536.824@0.0.1536.824" timestamp="1584862507421" />
+    <state x="790" y="0" width="760" height="803" key="dock-window-2" timestamp="1584815512731">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="790" y="0" width="760" height="803" key="dock-window-2/0.0.1536.824@0.0.1536.824" timestamp="1584815512731" />
+    <state x="847" y="13" width="609" height="804" key="find.popup" timestamp="1582020082822">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="847" y="13" width="609" height="804" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1582020082822" />
+  </component>
+</project>

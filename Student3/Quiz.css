@@ -1,0 +1,209 @@
+.main{
+    padding: 0;
+    margin: 0;
+    background-color: black;
+
+}
+
+.build-div{
+    display: flex;
+    width: auto;
+    height: 620px;
+    margin: 0 ;
+    padding: 0;
+    border: 5px solid black;
+    border-radius: 5px ;
+    background-image:url("Srilanka.png");
+    background-size:cover;
+    justify-content: center;
+}
+
+.second{
+    font-family:Tahoma;
+
+    display:none;
+
+    background: rgba(0, 0, 0, 0.5);
+
+
+    height:490px;
+
+    width:750px;
+
+    position:absolute;
+
+    top:25%;
+
+    left:20%;
+
+    padding:20px;
+}
+
+.logo{
+    height: 70px;
+    width: 270px;
+
+}
+
+
+header{
+    background: black;
+    border-bottom:#e8491d 3px solid ;
+}
+
+.nav{
+    float: right;
+    background-color: black;
+    overflow: hidden;
+
+}
+
+.nav a {
+    float: left;
+    font-size: 20px;
+    color: azure;
+    text-decoration: none;
+    padding: 14px 16px;
+    text-align: center;
+
+
+}
+
+
+.nav a:hover {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.questcss{
+    font-family: "Droid Sans";
+    font-size:30px;
+    border: 5px solid black;
+    border-radius: 20px;
+    margin-bottom:20px;
+    background: rgba(0, 0, 0, 0.5);
+    color: azure;
+    text-align: center;
+    margin-bottom:20px;
+}
+
+.option1{
+    font-family:textFont;
+    display:inline-block;
+    width: 50%;
+    background: white;
+    border: 1px solid rgb(255, 153, 0);
+    border-radius:20px;
+    text-align:left;
+    padding:5px;
+    cursor: pointer;
+    margin:10px 0px 10px 200px;
+    vertical-align:middle;
+}
+
+.question{
+
+    font-family: Arial;
+    font-size: 16px;
+    color: azure;
+    padding:5px;
+    align-items: center;
+    justify-content: center;
+
+
+}
+#colors{
+    width: 500px;
+    border-radius:20px;
+    margin: 85px 0 0 470px;
+    padding:100px;
+}
+
+.clock{
+    background: rgba(255, 255, 255, 0.5);
+    font-size: 40px;
+    width:9%;
+    font-family: sevenSegment;
+    text-align: center;
+
+}
+
+#restart{
+    width: 50px;
+    height: 50px;
+    margin:50px 0px 10px 350px;
+
+}
+#restartp{
+    margin:-5px 0px 10px 350px;
+    color: white;
+    font-weight: bold;
+    font-family: "Droid Sans";
+
+}
+
+#marks{
+    text-align: center;
+    font-family:textFont;
+    font-size: 27px;
+    font-weight: bold;
+    border: 5px solid black;
+    border-radius:20px;
+    color: white;
+
+}
+
+.second{
+    color: white;
+    font-family:textFont;
+}
+
+
+footer .logo{
+    height: 35px;
+    width: 135px;
+    float: left;
+    margin: 0 auto;
+
+}
+footer{
+    background: black;
+    border-top:#e8491d 3px solid ;
+    padding: 50px 0px;
+    float: left;
+    width: 100%
+}
+
+footer nav ul li{
+    display: inline-block;
+    margin-left: 20px;
+    list-style: none;
+}
+
+footer nav ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.pageeditor{
+    color: white;
+    font-size: 20px;
+}
+
+#myBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 1em;
+    border: none;
+    outline: none;
+    background-color: #555;
+    color: black;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    transition-duration: .5s;
+}
+#myBtn:hover {
+    background-color: red;

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="gallery.css">
+        <link rel="stylesheet" type="text/css" href="Common.css">
+        <script src="gallery.js"></script>
+        <title>Gallery</title>
+    </head>
+
+    <header id="top">
+        <img class="logo" src="dark-tourism.jpg" alt="website logo">
+        <nav class="nav">
+            <a href="../Student3/home.html"> Home</a>
+            <a href="../Student%204/gallery.html"> Gallery</a>
+            <a href="../Student3/Quiz.html"> Quiz</a>
+            <a href="../Student1/product%20page%20web%20cw.html"> Store</a>
+            <a href="../Student1/comment.html"> Comments</a>
+            <a href="../Student%204/sitemap.html"> Site map</a>
+            <a href="../Student3/aboutus.html"> About Us</a>
+        </nav>
+    </header>
+
+    <body>
+        <div id="bg">
+            <a id="gallery">GALLERY</a>
+        </div>
+
+        <!-- Creating a drop down menu for background color change -->
+        <div class="dropdown">
+            <button class="dropbtn">Background Colour</button>
+            <div class="dropdown-content">
+                <a href="#" onclick="document.body.style.backgroundColor = '#8BE4B8';">Light Green</a>
+                <a href="#" onclick="document.body.style.backgroundColor = 'white';">White</a>
+                <a href="#" onclick="document.body.style.backgroundColor = '#A1CCF3';">Light Blue</a>
+                <a href="#" onclick="document.body.style.backgroundColor = '#F3646A ';">Light Red</a>
+            </div>
+        </div>
+
+        <!-- Creating a drop down menu for body text color change -->
+        <div class="dropdown">
+            <button class="dropbtn">Text Colour</button>
+            <div class="dropdown-content">
+                <a href="#" onclick="document.getElementById('pp').style.color ='purple';">Purple</a>
+                <a href="#" onclick="document.getElementById('pp').style.color ='black';">Black</a>
+                <a href="#" onclick="document.getElementById('pp').style.color ='red';">Red</a>
+                <a href="#" onclick="document.getElementById('pp').style.color ='blue';">Blue</a>
+            </div>
+        </div>
+
+        <p id="pp">Click on the images below to get a brief describtion about each place</p>
+
+        <!-- Creating the thumbnail images -->
+        <div class="content">
+            <div class="row">
+                <div class="column">
+                    <img src="Pinnawalabox.jpg" onclick="popup();currentSlide(1)" class="thumbnail" alt="Pinnawala">
+                </div>
+                <div class="column">
+                    <img src="Mirissabox.jpg" onclick="popup();currentSlide(2)" class="thumbnail" alt="Mirissa">
+                </div>
+                <div class="column">
+                    <img src="Yalabox.jpg" onclick="popup();currentSlide(3)" class="thumbnail" alt="Yala">
+                </div>
+                <div class="column">
+                    <img src="Ellabox.jpg" onclick="popup();currentSlide(4)" class="thumbnail" alt="Ella">
+                </div>
+                <div class="column">
+                    <img src="Kandybox.png" onclick="popup();currentSlide(5)" class="thumbnail" alt="Kandy">
+                </div>
+            </div>
+
+            <!-- Creating large images for thumbnail images -->
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="popdown()">&times;</span>
+                <div class="modal-content">
+
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 5</div>
+                        <img src="Pinnawala.jpg" id="pinnawala" alt="pinnawala">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 6</div>
+                        <img src="Mirissa.jpg" id="mirissa"  alt="mirissa">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 5</div>
+                        <img src="Yala.jpg" id="yala" alt="yala">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 5</div>
+                        <img src="Ella.jpg" id="ella" alt="ella">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">5 / 5</div>
+                        <img src="Kandy.jpg" id="kandy" alt="kandy">
+                    </div>
+
+                    <!-- Next/previous controls -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    <!-- Caption text -->
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+
+                    <!-- Thumbnail image controls -->
+                    <div class="column">
+                        <img class="demo" src="Pinnawala.jpg" onclick="currentSlide(1)" style="width:50%;"
+                             alt="Pinnawala Elephant Orphanage (PEO) ; just as the name suggests holds a unique
+                             disposition in the ex-situ animal care. It’s success and fame has travelled not just within
+                              the country but throughout the world to an extent where Pinnawala synonymous with the
+                              Sri Lankan Elephant. Currently being a home to 93 elephants the concept was actualized by
+                               the late Hon. Minister Kalugalle on the 16th of February 1975.  Pinnawala at the time was
+                                a very remote area with lush coconut plantations and most importantly an area where the
+                                 availability of mahouts was not lacking. Also the immense amount of water required by
+                                 the elephants is supplemented with the availability of “Ma oya” running close by.">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo" src="Mirissa.jpg" onclick="currentSlide(2)" style="width:50%; margin-left:-40%;"
+                             alt="Mirissa is one of the main beach destinations in southern Sri Lanka. The area has it
+                             all, beautiful beaches, surf waves, whale watching and great bars and restaurants. Mirissa
+                             is developing quickly over the last couple of years so it’s also getting more crowded.
+                             There are still enough spots where you can enjoy a fresh coconut from your hammock seeing
+                             the sunset. Spend about 2 – 4 days with these things to do in Mirissa.">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo" src="Yala.jpg" onclick="currentSlide(3)" style="width:50%;  margin-left:-80%;"
+                             alt="Situated in Sri Lanka’s south-east hugging the panoramic Indian Ocean, Yala was
+                             designated a wildlife sanctuary in 1900 and was designated a national park in 1938.
+                             Ironically, the park was initially used as a hunting ground for the elite under British
+                             rule. Yala is home to 44 varieties of mammal and 215 bird species. Among its more famous
+                             residents are the world’s biggest concentration of leopards, majestic elephants,
+                             sloth bears, sambars, jackals, spotted dear, peacocks, and crocodiles.">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo" src="Ella.jpg" onclick="currentSlide(4)" style="width:50%; margin-left:-120%;"
+                             alt="Ella is a small village in the highlands of Sri Lanka which is filled with tea estates
+                             , mountains, waterfalls and of course with some good air to breath.Lots of people make Ella
+                              as one of their must visit destination just to witness the breathtaking views it creates.
+                              It is a dream place for many trekkers with some of the best hikes the Island provides.
+                              This hidden village got vastly popular among the tourists lately.Views of mist and clouds
+                               covering the summits of the mountain range and the morning sun rise in Ella are
+                               spectacular scenes to witness and captured. After a fresh hike in the morning,
+                               hit a waterfall, grab some tasty Sri Lankan foods from somewhere with a beer, rest for a
+                               while and go for a railwalk to famous Nine Arch Bridge in the evening, you would sure
+                               love the all experience.">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo" src="Kandy.jpg" onclick="currentSlide(5)" style="width:50%; margin-left:-130%;
+                         margin-bottom:70%;" alt="The Temple of Tooth at kandy is the final location of the sacred tooth
+                          of the lord Buddha which was brought to srilanka during the reign of king “keerthi sri
+                          Megawarna” by prince “Dantha” and Princess “Hemamala” from the kindom of kalingu India.
+                          It became the palladium of srilankan kings and was preciously guarded in a special shrine
+                          built within precincts of royal palace where the capital was located. The Temple of the Tooth
+                          Relic of Lord Buddha, sri dalada Maligawa is in the centre of the city, the highest venerated
+                          religious place with steeped in cultural heritage attracting the highest respect of the
+                          Buddhists as well as the other religions all over the world. The beautiful magnificent temple
+                           was built by late king Vimaladharmasooriya 1st in 1592 AD.">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#top"><button type="button" id="myBtn">Back to Top</button></a>
+        Copyright &copy; 2020 SL TOURS. Page Editor: <a href="bawantha%20cv.html" target="_blank" style="color: black"> Bawantha Perera |  W1761909 </a>
+
+    </body>
+
+
+    <footer>
+        <div class="logo">
+            <img class="logo" src="dark-tourism.jpg" width="30" height="10">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#"> Home</a></li>
+                <li><a href="#"> Gallery</a></li>
+                <li><a href="#"> Quiz</a></li>
+                <li><a href="#"> Store</a></li>
+                <li><a href="#"> Comments</a></li>
+                <li><a href="#"> Site map</a></li>
+                <li><a href="#"> Locations</a></li>
+                <li><a href="#"> About Us</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</html>

@@ -1,0 +1,299 @@
+<html>
+<header>
+    <div>
+        <img class="logo" src="dark-tourism.jpg">
+        <nav class="nav">
+            <a href="../Student3/home.html"> Home</a>
+            <a href="../Student%204/gallery.html"> Gallery</a>
+            <a href="../Student3/Quiz.html"> Quiz</a>
+            <a href="../Student1/product%20page%20web%20cw.html"> Store</a>
+            <a href="../Student1/comment.html"> Comments</a>
+            <a href="../Student%204/sitemap.html"> Site map</a>
+            <a href="../Student3/aboutus.html"> About Us</a>
+        </nav>
+    </div>
+</header>
+<meta charset="utf-8">
+<head>
+<style>
+    footer .logo{
+        height: 35px;
+        width: 135px;
+        float: left;
+        margin: 0 auto;
+        
+    }
+    footer{
+        background: black;
+        border-top:#e8491d 3px solid ;
+        padding: 30px 0px;
+        float: left;
+        width: 100%
+    }
+    
+    footer nav ul li{
+        display: inline-block;
+        margin-left: 20px;
+        list-style: none;
+    }
+    
+    footer nav ul li a{
+        color: #fff;
+        text-decoration: none;
+    }
+    .logo{
+    height: 70px;
+    width: 270px;
+
+}
+
+
+header{
+    background: black;
+    border-bottom:#e8491d 3px solid ;
+}
+
+.nav{
+    float: right;
+    background-color: black;
+    overflow: hidden;
+
+}
+
+.nav a {
+    float: left;
+    font-size: 20px;
+    color: azure;
+    text-decoration: none;
+    padding: 14px 16px;
+    text-align: center;
+
+
+}
+
+
+.nav a:hover {
+    font-weight: bold;
+    text-decoration: none;
+}
+	body {
+		background-color: black;
+	}
+
+    #feedbackArea{
+        margin-top: 40px;
+		background-color: darkgray;
+		border-radius: 12px;
+		padding: 20px 20px 20px 20px;
+		width: 460px;
+	} /*form area */
+    #form{
+		text-align: left;
+	}
+    
+    #ratingbox{}
+    
+    
+    #reveiws{
+        float: inherit;
+        background-color: #f1f1f1;
+		border-radius: 12px;
+		padding: 10px 1px 1px 1px;
+		width: 460px;            
+    }   /*for created feedback*/
+    
+        #content{
+        background-color: lightgray;
+		border-radius: 10px;
+		padding: 1px 1px 1px 20px;
+        margin: 12px;
+		width: 410;
+        font-size: 20px;
+
+    }       
+    #rate{
+        background-color: lightgray;
+		border-radius: 10px;
+		padding: 3px 3px 3px 10px;
+        margin: 12px;
+		width: 60;
+        font-size: 20px;
+    }
+    #name{
+        margin: 12px;
+        margin-top: 4px;
+        font-size: 24px;
+    }
+    
+    #size{
+		float: right;
+	}
+	label{
+		width: 200px;		
+		display: inline-block;
+	}
+    h1{
+        color: white;
+    }
+	#butt{
+	  	border-radius: 12px;
+	  	background-color: red;
+	  	border: none;
+	  	color: white;
+	  	padding: 16px 32px;
+	  	text-align: center;
+	  	text-decoration: none;
+	  	display: inline-block;
+	  	font-size: 16px;
+	  	margin: 4px 2px;
+	  	-webkit-transition-duration: 0.4s; /* Safari */
+	  	transition-duration: 0.4s;
+	  	cursor: pointer;
+	}
+
+	#butt:hover {
+		background-color: orange;
+		color: white;
+	}
+	#membernames{
+		font-weight: bold;
+		color: white;
+	}
+</style>
+</head>
+<body>
+<h1 id="title">comment page</h1>
+    <div id="buttons">
+	<form id="size">
+		<div id="plus">
+			<input id="butt" type="button" value=" + " onclick="increaseFontSizeBy1px()">
+		</div>
+			<br>
+		<div id="minus">
+			<input id="butt" type="button" value=" - " onclick="decreaseFontSizeBy1px()">
+		</div>
+	</form>
+	
+</div>
+<div id="containweb">
+	<div id="feedbackArea">
+		<form id="form">
+	        
+            <div class="ratingbox">
+            <label>How do you rate your overall experience?</label>
+                <input type="radio" name="experience" id="radio_1" value="1" >
+                1
+                <input type="radio" name="experience" id="radio_2" value="2" >
+                2
+                <input type="radio" name="experience" id="radio_3" value="3" >
+                3
+                <input type="radio" name="experience" id="radio_4" value="4" >
+                4
+                <input type="radio" name="experience" id="radio_5" value="5" >
+                5
+                <p></p>
+            </div> 
+
+            <div class="commentbox">
+                <label for="comments"> Comments: </label>
+                <textarea class="contentarea" type="textarea" name="comments" id="commentsid" placeholder="Your Comments" maxlength="6000" rows="7"></textarea>
+
+            </div>	        
+
+            <div class="namebox">
+                <label for="name">Your Name:</label>
+                <input type="text" id="nameid" name="name" value=" ">
+            </div>
+
+            <div class="mailbox">
+                <label for="email">Email:</label>
+                <input type="email"  id="emailid" name="email" >
+            </div>    
+
+            <div id=postbutt>
+                <button type="submit" id="postbutton" onclick="addCode()">Post </button>
+</div>
+            
+		</form>
+	</div>	
+</div>
+    <br>
+    <br>
+<div id="reveiwarea">
+</div>    
+<script> 
+    function addCode() 
+    { 
+        var rates = document.getElementsByName('experience');
+        var rate_value=0;
+        for(var i = 0; i < rates.length; i++){
+            if(rates[i].checked){
+                rate_value = rates[i].value;
+            }
+        }
+        var username= nameid.value;
+        var comment= commentsid.value;
+        if(username==" ")
+        {
+            alert("enter name");
+            return false;
+        }
+        
+        if(rate_value==0)
+        {
+            alert("enter rating");
+            return false;
+        }
+        if(username!=" " && rate_value!=0){
+            
+            alert(username+",thank you for your rating of "+rate_value+" stars \n your comment was: "+comment);    
+            
+/*            document.getElementById("reveiwarea").innerHTML+=`
+            <div id="reveiws">
+            <p id="name" ><b> `+username+` </b></p>
+            <p id="rate"> <b> `+rate_value+`  </b> ⭐ </p>
+            <p id="content">`+comment+`</p>
+            </div> <br>
+            `;*/
+
+            document.getElementById('nameid').value = " ";
+            document.getElementById('commentsid').value = " ";
+            document.getElementById('emailid').value = " ";
+            
+            var rates = document.getElementsByName('experience');
+            var rate_value;
+            for(var i = 0; i < rates.length; i++)
+            {if(rates[i].checked){
+                rates[i].checked=false;
+            }
+            }
+        }
+    }    
+	var x= 18; 
+    function increaseFontSizeBy1px() {
+        document.getElementById("containweb").style.fontSize = x++;
+    }
+	function decreaseFontSizeBy1px() {
+        document.getElementById("containweb").style.fontSize = --x;
+    }
+</script>
+<footer>
+    <div class="logo">
+        <img class="logo" src="dark-tourism.jpg" width="30" height="10">
+    </div>
+    
+    <nav>
+        <ul>
+            <li><a href="#"> Home</a></li>
+            <li><a href="#"> Gallery</a></li>
+            <li><a href="#"> Quiz</a></li>
+            <li><a href="#"> Store</a></li>
+            <li><a href="#"> Comments</a></li>
+            <li><a href="#"> Site map</a></li>
+            <li><a href="#"> Locations</a></li>
+            <li><a href="#"> About Us</a></li>
+        </ul>
+    </nav>
+</footer>
+</body>
+</html>
